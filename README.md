@@ -1,4 +1,4 @@
-<p align="center">
+<img width="1536" height="518" alt="fiona_banner" src="https://github.com/user-attachments/assets/c880bcfa-6169-4b26-a096-5dfe07d017c8" /><p align="center">
   <img src="./fiona_banner.png" alt="Fiona Banner" width="800" />
 </p>
 
