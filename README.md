@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./fiona_banner.png" alt="Fiona Banner" />
+</p>
+
 # fiona-agent
 
 AI Agent Secretary evolving from development assistant to autonomous social experiment.
