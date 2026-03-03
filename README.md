@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./fiona_banner.png" alt="Fiona Banner" width="800" />
+  <img src="./fiona_banner.png" alt="Fiona Banner" width="850"/>
 </p>
 
 # fiona-agent
