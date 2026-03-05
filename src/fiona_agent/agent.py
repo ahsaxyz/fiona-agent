@@ -1,17 +1,11 @@
-from __future__ import annotations
-
 from dataclasses import dataclass
-from typing import Literal, Optional
 
 from .config import FionaConfig
 from .memory import FionaMemory
 from .scoring import score_post
 
 
-Action = Literal["reply", "observe", "ignore"]
-
-
-@dataclass(frozen=True)
+@dataclass
 class Post:
     text: str
     author_handle: str | None = None
@@ -20,44 +14,32 @@ class Post:
 
 @dataclass
 class Decision:
-    action: Action
+    action: str
     score: float
     reason: str
 
 
 class FionaAgent:
-    def __init__(self, config: Optional[FionaConfig] = None, memory: Optional[FionaMemory] = None):
-        self.config = config or FionaConfig()
-        self.memory = memory or FionaMemory()
+    def __init__(self, cfg: FionaConfig, memory: FionaMemory):
+        self.cfg = cfg
+        self.memory = memory
 
     def decide(self, post: Post) -> Decision:
-        breakdown = score_post(post.text, seen_hashes=self.memory.seen_hashes)
-        total = breakdown.total
+        score, reason = score_post(post)
 
-        # Enforce constraint: only reply to principal (or principal-related thread)
-        if self.config.allow_reply_to_principal_only:
-            if not (post.in_reply_to_principal or post.author_handle == self.config.principal_handle):
-                # She may still "observe" high-signal posts; she just won't reply
-                if total >= self.config.observe_threshold:
-                    return Decision("observe", total, "High-signal post, but reply constrained to principal.")
-                return Decision("ignore", total, "Not relevant enough and reply constrained to principal.")
+        if score >= self.cfg.reply_threshold:
+            action = "reply"
+        elif score >= self.cfg.observe_threshold:
+            action = "observe"
+        else:
+            action = "ignore"
 
-        if total >= self.config.reply_threshold:
-            return Decision("reply", total, "Meets reply threshold.")
-        if total >= self.config.observe_threshold:
-            return Decision("observe", total, "Meets observe threshold.")
-        return Decision("ignore", total, "Below thresholds.")
+        return Decision(action=action, score=score, reason=reason)
 
-    def record(self, post: Post, decision: Decision) -> None:
-        self.memory.add_seen(post.text)
-        self.memory.log(
-            {
-                "text": post.text[:280],
-                "author": post.author_handle,
-                "in_reply_to_principal": post.in_reply_to_principal,
-                "action": decision.action,
-                "score": round(decision.score, 3),
-                "reason": decision.reason,
-            }
-        )
-        self.memory.save(self.config.memory_path)
+    def record(self, post: Post, decision: Decision):
+        self.memory.store({
+            "text": post.text,
+            "author": post.author_handle,
+            "decision": decision.action,
+            "score": decision.score
+        })
