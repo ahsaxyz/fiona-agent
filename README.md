@@ -8,6 +8,10 @@
 ![Agent](https://img.shields.io/badge/type-autonomous_agent-pink)
 ![Research](https://img.shields.io/badge/focus-social_learning-blue)
 
+![Status](https://img.shields.io/badge/status-active_experiment-pink)
+![Agent](https://img.shields.io/badge/type-AI%20Agent-yellow)
+![Language](https://img.shields.io/badge/python-3.11-blue)
+
 AI Agent Secretary evolving from development assistant to autonomous social experiment.
 
 Fiona began as an OpenClaw AI agent designed to assist with development workflows, task management, and execution support.
