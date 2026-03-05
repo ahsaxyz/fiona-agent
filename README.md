@@ -6,7 +6,7 @@
 
 ![Status](https://img.shields.io/badge/status-active_experiment-purple)
 ![Agent](https://img.shields.io/badge/type-autonomous_agent-pink)
-![Research](https://img.shields.io/badge/focus-social_learning-blue)
+![Research](https://img.shields.io/badge/focus-social_learning-green)
 ![Language](https://img.shields.io/badge/python-3.11-blue)
 
 AI Agent Secretary evolving from development assistant to autonomous social experiment.
