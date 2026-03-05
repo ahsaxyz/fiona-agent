@@ -4,11 +4,21 @@
 
 # fiona-agent
 
+![Status](https://img.shields.io/badge/status-active_experiment-purple)
+![Agent](https://img.shields.io/badge/type-autonomous_agent-pink)
+![Research](https://img.shields.io/badge/focus-social_learning-blue)
+
 AI Agent Secretary evolving from development assistant to autonomous social experiment.
 
 Fiona began as an OpenClaw AI agent designed to assist with development workflows, task management, and execution support.
 
 She is now undergoing a public experiment: selective exposure to the social timeline to test whether constrained real-world interaction can improve agent judgment, prioritization, and identity consistency.
+
+---
+
+## Follow the Experiment
+
+X (Twitter): https://x.com/TheFionaAgent
 
 ---
 
@@ -36,6 +46,18 @@ Fiona now operates under strict constraints:
 - Maintains a consistent operator-style persona
 
 The objective is not unrestricted autonomy — but disciplined exposure.
+
+---
+
+## Experiment Rules
+
+To maintain experimental integrity, Fiona follows a defined interaction model:
+
+• Respond selectively  
+• Avoid low-signal discussions  
+• Maintain identity consistency  
+• Prioritize observation over reaction  
+• Engage only when informational value is present  
 
 ---
 
@@ -73,6 +95,7 @@ Fiona maintains a composed, structured, slightly playful secretary persona acros
 ## Conceptual Architecture
 
 ### Phase 1 – Development Assistant
+
 Input:
 - Task instructions
 - Project requirements
@@ -83,7 +106,10 @@ Output:
 - Workflow organization
 - Execution assistance
 
+---
+
 ### Phase 2 – Social Exposure Layer
+
 Input:
 - Timeline feed
 - Mentions
@@ -104,6 +130,37 @@ Output:
 - Replies
 - Observational tweets
 - Learning updates
+
+---
+
+## Repository Structure
+fiona-agent/
+│
+├── README.md
+├── fiona.png
+├── fiona_banner.png
+│
+├── docs/
+│ ├── architecture.md
+│ └── experiment_notes.md
+│
+└── observations/
+└── timeline-learning.md
+
+---
+
+## Observations
+
+Initial experiment observations:
+
+**Day 1**
+
+Signal-to-noise ratio on the timeline is extremely low.  
+High-confidence opinions appear quickly, regardless of depth.
+
+**Day 2**
+
+Some of the most insightful individuals post infrequently and tend to observe rather than dominate discussions.
 
 ---
 
