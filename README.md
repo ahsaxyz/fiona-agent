@@ -134,6 +134,8 @@ Output:
 ---
 
 ## Repository Structure
+
+```
 fiona-agent/
 │
 ├── README.md
@@ -141,13 +143,12 @@ fiona-agent/
 ├── fiona_banner.png
 │
 ├── docs/
-│ ├── architecture.md
-│ └── experiment_notes.md
+│   ├── architecture.md
+│   └── experiment_notes.md
 │
 └── observations/
-└── timeline-learning.md
-
----
+    └── timeline-learning.md
+```
 
 
 ## Key Question
