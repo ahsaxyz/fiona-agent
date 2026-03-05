@@ -149,20 +149,27 @@ fiona-agent/
 ├── agent-rules.md
 │
 ├── docs/
-│ ├── architecture.md
-│ └── persona.md
+│   ├── architecture.md
+│   ├── checklist.md
+│   ├── experiment_notes.md
+│   ├── FAQ.md
+│   ├── persona.md
+│   └── run.md
 │
 ├── scripts/
-│ └── format.sh
+│   ├── format.sh
+│   └── run_local.sh
 │
 ├── src/
-│ └── fiona_agent/
-│ ├── init.py
-│ ├── agent.py
-│ ├── cli.py
-│ ├── config.py
-│ ├── memory.py
-│ └── scoring.py
+│   ├── fiona.py
+│   │
+│   └── fiona_agent/
+│       ├── __init__.py
+│       ├── agent.py
+│       ├── cli.py
+│       ├── config.py
+│       ├── memory.py
+│       └── scoring.py
 │
 ├── fiona.png
 └── fiona_banner.png
