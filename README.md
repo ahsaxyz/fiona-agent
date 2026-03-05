@@ -2,7 +2,7 @@
   <img src="./fiona_banner.png" alt="Fiona Banner" width="850"/>
 </p>
 
-# fiona-agent
+# fiona-age
 
 AI Agent Secretary evolving from development assistant to autonomous social experiment.
 
