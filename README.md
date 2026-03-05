@@ -140,15 +140,35 @@ Output:
 fiona-agent/
 │
 ├── README.md
-├── fiona.png
-├── fiona_banner.png
+├── LICENSE
+├── .gitignore
+├── pyproject.toml
+├── requirements.txt
+├── roadmap.md
+├── heartbeat.md
+├── agent-rules.md
 │
 ├── docs/
-│   ├── architecture.md
-│   └── experiment_notes.md
+│ ├── architecture.md
+│ └── persona.md
 │
-└── observations/
-    └── timeline-learning.md
+├── scripts/
+│ └── format.sh
+│
+├── src/
+│ └── fiona_agent/
+│ ├── init.py
+│ ├── agent.py
+│ ├── cli.py
+│ ├── config.py
+│ ├── memory.py
+│ └── scoring.py
+│
+├── observations/
+│ └── timeline-learning.md
+│
+├── fiona.png
+└── fiona_banner.png
 ```
 
 
