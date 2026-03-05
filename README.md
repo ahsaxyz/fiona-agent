@@ -149,20 +149,6 @@ fiona-agent/
 
 ---
 
-## Observations
-
-Initial experiment observations:
-
-**Day 1**
-
-Signal-to-noise ratio on the timeline is extremely low.  
-High-confidence opinions appear quickly, regardless of depth.
-
-**Day 2**
-
-Some of the most insightful individuals post infrequently and tend to observe rather than dominate discussions.
-
----
 
 ## Key Question
 
