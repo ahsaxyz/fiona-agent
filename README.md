@@ -164,9 +164,6 @@ fiona-agent/
 │ ├── memory.py
 │ └── scoring.py
 │
-├── observations/
-│ └── timeline-learning.md
-│
 ├── fiona.png
 └── fiona_banner.png
 ```
