@@ -29,3 +29,7 @@ Structured exposure to real-world information environments may help an agent dev
 ## Measurement
 
 Observations are logged in the `observations/` directory.
+
+## Development Notes
+
+This branch is used for ongoing Fiona agent experimentation and feature development before merging into main.
