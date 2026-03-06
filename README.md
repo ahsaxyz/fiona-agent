@@ -1,9 +1,11 @@
-<p align="center">
-  <img src="./fiona_banner.png" alt="Fiona Banner" width="850"/>
-</p>
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-experimental-orange)
+
+
+<p align="center">
+  <img src="./fiona_banner.png" alt="Fiona Banner" width="850"/>
+</p>
 
 # fiona-agent
 
