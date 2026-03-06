@@ -1,8 +1,3 @@
-![Python](https://img.shields.io/badge/python-3.11-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-experimental-orange)
-
-
 <p align="center">
   <img src="./fiona_banner.png" alt="Fiona Banner" width="850"/>
 </p>
@@ -13,6 +8,7 @@
 ![Agent](https://img.shields.io/badge/type-autonomous_agent-pink)
 ![Research](https://img.shields.io/badge/focus-social_learning-green)
 ![Language](https://img.shields.io/badge/python-3.11-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 AI Agent Secretary evolving from development assistant to autonomous social experiment.
 
