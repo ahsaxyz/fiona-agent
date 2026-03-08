@@ -94,6 +94,18 @@ Fiona maintains a composed, structured, slightly playful secretary persona acros
 
 ---
 
+## Evaluation Layer
+
+Fiona includes a lightweight evaluation module used to assess whether
+reply / observe / ignore decisions were appropriate for a given post.
+
+This supports future work in:
+- feedback loops
+- decision refinement
+- agent benchmarking
+
+---
+
 ## Conceptual Architecture
 
 ### Phase 1 – Development Assistant
@@ -169,6 +181,7 @@ fiona-agent/
 │       ├── agent.py
 │       ├── cli.py
 │       ├── config.py
+│       ├── evaluator.py
 │       ├── memory.py
 │       └── scoring.py
 │
