@@ -4,7 +4,10 @@ version = "0.1.0"
 description = "Experimental AI agent exploring selective social exposure and constrained engagement."
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+
+dependencies = [
+    "pytest>=7.0"
+]
 
 [project.scripts]
 fiona-agent = "fiona_agent.cli:main"
