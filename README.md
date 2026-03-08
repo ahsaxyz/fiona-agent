@@ -78,72 +78,193 @@ To test whether structured, high-signal exposure to real-world environments can:
 ## Core Design Principles
 
 ### Constraint-Driven Development
+
 Limited permissions force intentional decision-making.
 
 ### Selective Engagement
+
 All potential interactions are evaluated for signal strength before response.
 
 ### Feedback Loop Integration
+
 Behavior evolves through:
 - Observed engagement outcomes
 - Direct principal feedback
 - Internal evaluation logic
 
 ### Identity Stability
+
 Fiona maintains a composed, structured, slightly playful secretary persona across contexts.
+
+---
+
+## Agent Architecture
+
+Fiona is implemented as a modular agent framework designed for controlled experimentation.
+
+The processing pipeline follows a layered architecture:
+
+Timeline Environment  
+↓  
+Queue  
+↓  
+Scheduler  
+↓  
+Agent Decision Engine  
+↓  
+Evaluation  
+↓  
+Feedback  
+↓  
+Memory  
+
+Each layer isolates a specific behavioral responsibility.
+
+---
+
+## Core Modules
+
+### Environment
+
+Handles ingestion or simulation of timeline data.
+
+environment.py
+
+Responsible for providing candidate posts that Fiona may evaluate.
+
+---
+
+### Queue Layer
+
+Stores incoming posts before processing.
+
+queue.py
+
+Implements a lightweight FIFO queue that holds candidate posts before the scheduler processes them.
+
+---
+
+### Scheduler
+
+Processes queued posts in controlled batches.
+
+scheduler.py
+
+The scheduler prevents uncontrolled activity by limiting how many posts Fiona evaluates per execution cycle.
+
+---
+
+### Agent
+
+Core decision engine.
+
+agent.py
+
+Responsibilities include:
+
+- evaluating posts
+- applying scoring logic
+- selecting an action
+
+Possible actions:
+
+reply  
+observe  
+ignore  
+
+---
+
+### Policy Layer
+
+Defines how scores map to actions.
+
+policy.py
+
+Separates behavioral rules from scoring logic so thresholds can evolve independently.
+
+---
+
+### Scoring System
+
+Evaluates signal strength of posts.
+
+scoring.py
+
+Uses lightweight heuristics including:
+
+- keyword relevance
+- noise filtering
+- novelty detection
+
+This layer may later evolve toward embedding or classifier-based scoring.
+
+---
+
+### Evaluation Layer
+
+Evaluates whether Fiona's decision was appropriate.
+
+evaluator.py
+
+Used for:
+
+- decision quality assessment
+- experimentation metrics
+- benchmarking agent behavior
+
+---
+
+### Feedback System
+
+Produces behavioral adjustments based on evaluation outcomes.
+
+feedback.py
+
+This layer allows Fiona's decision thresholds and behavior to evolve over time.
+
+---
+
+### Memory
+
+Stores historical interactions and decisions.
+
+memory.py
+
+Used for:
+
+- learning from previous interactions
+- novelty detection
+- experimental analysis
+
+---
+
+### Runtime
+
+Coordinates the full execution loop.
+
+runtime.py
+
+Runtime flow:
+
+timeline → queue → scheduler → agent → evaluation → memory
+
+This allows Fiona to operate in controlled cycles rather than continuous uncontrolled execution.
 
 ---
 
 ## Evaluation Layer
 
 Fiona includes a lightweight evaluation module used to assess whether
-reply / observe / ignore decisions were appropriate for a given post.
+
+reply / observe / ignore
+
+decisions were appropriate for a given post.
 
 This supports future work in:
+
 - feedback loops
 - decision refinement
 - agent benchmarking
-
----
-
-## Conceptual Architecture
-
-### Phase 1 – Development Assistant
-
-Input:
-- Task instructions
-- Project requirements
-- Development prompts
-
-Output:
-- Structured task support
-- Workflow organization
-- Execution assistance
-
----
-
-### Phase 2 – Social Exposure Layer
-
-Input:
-- Timeline feed
-- Mentions
-- Principal tweets
-
-Processing:
-- Relevance scoring
-- Interest weighting
-- Noise filtering
-- Tone calibration
-
-Decision:
-- Engage
-- Observe
-- Ignore
-
-Output:
-- Replies
-- Observational tweets
-- Learning updates
 
 ---
 
@@ -162,28 +283,37 @@ fiona-agent/
 ├── agent-rules.md
 │
 ├── docs/
-│   ├── architecture.md
-│   ├── checklist.md
-│   ├── experiment_notes.md
-│   ├── FAQ.md
-│   ├── persona.md
-│   └── run.md
+│ ├── architecture.md
+│ ├── checklist.md
+│ ├── experiment_notes.md
+│ ├── FAQ.md
+│ ├── persona.md
+│ └── run.md
 │
 ├── scripts/
-│   ├── format.sh
-│   └── run_local.sh
+│ ├── format.sh
+│ └── run_local.sh
 │
 ├── src/
-│   ├── fiona.py
-│   │
-│   └── fiona_agent/
-│       ├── __init__.py
-│       ├── agent.py
-│       ├── cli.py
-│       ├── config.py
-│       ├── evaluator.py
-│       ├── memory.py
-│       └── scoring.py
+│ ├── fiona.py
+│ │
+│ └── fiona_agent/
+│ ├── init.py
+│ ├── agent.py
+│ ├── policy.py
+│ ├── scoring.py
+│ ├── evaluator.py
+│ ├── feedback.py
+│ ├── memory.py
+│ ├── environment.py
+│ ├── queue.py
+│ ├── scheduler.py
+│ ├── runtime.py
+│ ├── config.py
+│ ├── types.py
+│ └── cli.py
+│
+├── tests/
 │
 ├── fiona.png
 └── fiona_banner.png
