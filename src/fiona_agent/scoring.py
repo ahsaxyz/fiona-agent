@@ -1,7 +1,8 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Iterable
+
+from .signals import keyword_signal, length_signal, punctuation_signal
 
 
 @dataclass(frozen=True)
@@ -12,42 +13,21 @@ class ScoreBreakdown:
 
     @property
     def total(self) -> float:
-        # simple weighted sum; tweak later
         return min(1.0, 0.45 * self.relevance + 0.25 * self.novelty + 0.30 * self.quality)
 
 
-HIGH_SIGNAL_KEYWORDS = (
-    "agent", "ai", "architecture", "systems", "security", "research",
-    "openclaw", "solana", "protocol", "design", "implementation",
-)
-
-LOW_SIGNAL_KEYWORDS = (
-    "ratio", "gm", "wagmi", "airdrop", "pump", "free money", "dm me",
-    "giveaway", "memecoin", "onlyfans",
-)
-
-
-def _keyword_hits(text: str, keywords: Iterable[str]) -> int:
-    t = text.lower()
-    return sum(1 for k in keywords if k in t)
-
-
 def score_post(post, *, seen_hashes: set[str] | None = None):
-    """
-    Very lightweight heuristic scoring.
-    Replace later with embeddings/classifiers if you want.
-    """
-
     text = post.text
 
     if not text:
         return 0.0, "empty"
 
-    hs = _keyword_hits(text, HIGH_SIGNAL_KEYWORDS)
-    ls = _keyword_hits(text, LOW_SIGNAL_KEYWORDS)
+    keyword_result = keyword_signal(text)
+    length_result = length_signal(text)
+    punctuation_result = punctuation_signal(text)
 
-    relevance = min(1.0, hs * 0.18)
-    quality = max(0.0, min(1.0, 0.6 - ls * 0.25 + hs * 0.08))
+    relevance = keyword_result.score
+    quality = (length_result.score + punctuation_result.score) / 2
 
     novelty = 0.7
     if seen_hashes is not None:
@@ -60,6 +40,10 @@ def score_post(post, *, seen_hashes: set[str] | None = None):
         quality=quality,
     )
 
-    reason = f"relevance={breakdown.relevance:.2f}, novelty={breakdown.novelty:.2f}, quality={breakdown.quality:.2f}"
+    reason = (
+        f"{keyword_result.reason}; "
+        f"{length_result.reason}; "
+        f"{punctuation_result.reason}"
+    )
 
     return breakdown.total, reason
