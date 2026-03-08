@@ -4,6 +4,7 @@ from .config import FionaConfig
 from .memory import FionaMemory
 from .policy import FionaPolicy, PolicyThresholds
 from .scoring import score_post
+from .types import Decision
 
 
 @dataclass
@@ -11,13 +12,6 @@ class Post:
     text: str
     author_handle: str | None = None
     in_reply_to_principal: bool = False
-
-
-@dataclass
-class Decision:
-    action: str
-    score: float
-    reason: str
 
 
 class FionaAgent:
