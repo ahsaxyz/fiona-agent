@@ -5,7 +5,7 @@ from fiona_agent.memory import FionaMemory
 
 def test_decide_action():
     cfg = FionaConfig()
-    memory = FionaMemory(path="test_memory.json")
+    memory = FionaMemory("test_memory.json")
 
     agent = FionaAgent(cfg=cfg, memory=memory)
 
