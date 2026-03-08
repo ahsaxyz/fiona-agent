@@ -1,5 +1,7 @@
 # Security Policy
 
-Please report vulnerabilities privately by opening a security issue.
+This project is experimental and not intended for production use.
 
-This repository is experimental and evolving.
+If you discover a vulnerability, please open a private issue or contact the maintainer.
+
+Dependencies should be kept up to date and reviewed regularly.
