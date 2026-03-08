@@ -332,6 +332,19 @@ Phase 2: Active public experiment.
 
 ---
 
+## Citation
+
+If referencing this experiment or repository, please cite:
+
+@software{fiona_agent,
+  title = {Fiona Agent},
+  author = {ahsaxyz},
+  year = {2026},
+  url = {https://github.com/ahsaxyz/fiona-agent}
+}
+
+---
+
 ## Maintainer
 
 @ahsaxyz
