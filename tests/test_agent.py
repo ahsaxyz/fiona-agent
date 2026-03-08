@@ -4,7 +4,11 @@ from fiona_agent.memory import FionaMemory
 
 
 def test_decide_action():
-    agent = FionaAgent(cfg=FionaConfig(), memory=FionaMemory())
+    cfg = FionaConfig()
+    memory = FionaMemory(path="test_memory.json")
+
+    agent = FionaAgent(cfg=cfg, memory=memory)
+
     post = Post(text="AI agent research architecture")
 
     decision = agent.decide(post)
