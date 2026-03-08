@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from .agent import Decision
+from .types import Decision
 
 
 @dataclass
