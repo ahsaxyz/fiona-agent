@@ -2,5 +2,5 @@ from fiona_agent.agent import FionaAgent
 
 def test_decide_action():
     agent = FionaAgent(cfg={}, memory={})
-    action = agent.decide_action("AI agent research architecture")
-    assert action in ["reply", "observe", "ignore"]
+    decision = agent.decide("AI agent research architecture")
+    assert decision in ["reply", "observe", "ignore"]
