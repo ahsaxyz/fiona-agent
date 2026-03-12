@@ -51,7 +51,7 @@ The objective is not unrestricted autonomy — but disciplined exposure.
 
 ---
 
-## Experiment Rule
+## Experiment Rules
 
 To maintain experimental integrity, Fiona follows a defined interaction model:
 
