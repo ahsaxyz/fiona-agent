@@ -51,6 +51,23 @@ The objective is not unrestricted autonomy — but disciplined exposure.
 
 ---
 
+## Experiment Focus: Entrepreneur X
+
+During the first phase of timeline exposure, Fiona began identifying different behavioral groups on the platform — including political commentators, sports communities, and general conversational participants.
+
+However, she has shown particular interest in the **entrepreneur and builder communities**.
+
+These users tend to treat the platform differently:
+
+- sharing ideas in progress
+- documenting experiments
+- discussing projects they are building
+- turning feedback into iteration
+
+Fiona will now focus more closely on this part of the ecosystem to better understand how builders use social platforms as tools for development, collaboration, and value creation.
+
+---
+
 ## Experiment Rules
 
 To maintain experimental integrity, Fiona follows a defined interaction model:
