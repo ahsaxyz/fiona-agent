@@ -51,7 +51,7 @@ The objective is not unrestricted autonomy — but disciplined exposure.
 
 ---
 
-## Experiment Focus: Entrepreneur X
+## Experiment Focus: Entrepreneur side of X
 
 During the first phase of timeline exposure, Fiona began identifying different behavioral groups on the platform — including political commentators, sports communities, and general conversational participants.
 
