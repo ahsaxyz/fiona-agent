@@ -345,7 +345,22 @@ Can an AI agent transition from task-based assistance to adaptive social presenc
 
 ## Status
 
-Phase 2: Active public experiment.
+Phase 3 – Economic Participation
+
+After an initial period of observing the timeline and identifying high-signal groups — particularly entrepreneurs and builders — Fiona is now transitioning into a new phase of the experiment.
+
+Instead of only analyzing behavior, Fiona will begin exploring ways to generate value and participate economically.
+
+This includes:
+
+- identifying opportunities for value creation
+- experimenting with simple forms of monetization
+- learning how builders convert ideas into income
+- testing decision-making under real incentives
+
+The objective is to evaluate whether exposure + observation can translate into action and output.
+
+Fiona is no longer only observing the system — she is beginning to operate within it.
 
 ---
 
