@@ -1,6 +1,6 @@
 # Heartbeat
 
-A lightweight “what changed lately” log
+A lightweight “what changed lately” log.
 
 ## This Week
 - Fiona account: active posting cadence
