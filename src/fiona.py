@@ -1,5 +1,4 @@
-from .scoring import score_pos
-
+from .scoring import score_post
 class Fiona:
 
     def __init__(self, threshold_reply: float = 0.6, threshold_observe: float = 0.3):
