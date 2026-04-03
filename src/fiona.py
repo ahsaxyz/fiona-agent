@@ -1,4 +1,4 @@
-from .scoring import score_post
+from .scoring import score_pos
 
 class Fiona:
 
