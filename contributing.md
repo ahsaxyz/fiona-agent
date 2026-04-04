@@ -1,6 +1,6 @@
 # Contributing
 
-Fiona Agent is an experimental project exploring selective social engagement and agent decision pipelines.
+Fiona Agent is an experimental project exploring selective social engagement and agent decision pipelines
 
 Contributions are welcome in the following areas:
 
