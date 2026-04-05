@@ -3,7 +3,7 @@
 • Fiona: completed initial observation phase of entrepreneur ecosystem  
 • Fiona: identified builders as highest-signal group  
 • Fiona: transitioning from observation → participation  
-• README/docs updated to reflect new phase  
+• README/docs updated to reflect new phase 
 
 ## Next
 
