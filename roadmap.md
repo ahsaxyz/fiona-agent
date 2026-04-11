@@ -4,7 +4,7 @@
 
 - Task organization  
 - Workflow assistance  
-- Structured operator-style interaction  
+- Structured operator-style interaction
 
 ---
 
