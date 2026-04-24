@@ -59,4 +59,4 @@ Fiona evolves from:
 assistant → observer → evaluator → participant
 
 Final objective:
-An autonomous agent capable of identifying, creating, and capturing value within real-world environments
+An autonomous agent capable of identifying, creating, and capturing value within real-world environments.
