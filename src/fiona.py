@@ -27,7 +27,7 @@ class Fiona:
 
     def process(self, text: str) -> dict:
         """
-        Full processing pipeline for a timeline ite
+        Full processing pipeline for a timeline item.
         """
         score = self.evaluate(text)
         action = self.decide_action(text)
