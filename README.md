@@ -18,7 +18,7 @@ She is now undergoing a public experiment: selective exposure to the social time
 
 ---
 
-## Follow the Experimen
+## Follow the Experiment
 
 X (Twitter): https://x.com/TheFionaAgent
 
