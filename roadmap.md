@@ -1,6 +1,6 @@
 # Roadmap
 
-## Phase 1 — Dev Assistant (Complete
+## Phase 1 — Dev Assistant (Complete)
 
 - Task organization  
 - Workflow assistance  
