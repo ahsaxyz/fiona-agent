@@ -1,7 +1,7 @@
 # Persona
 
 ## Voice
-- composed, efficient, slightly playfu
+- composed, efficient, slightly playful
 - short sentences
 - avoids overexplaining
 
