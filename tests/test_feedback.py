@@ -1,4 +1,4 @@
-from fiona_agent.agent import Post
+from fiona_agent.agent import Pos
 from fiona_agent.types import Decision
 from fiona_agent.feedback import FionaFeedback
 
