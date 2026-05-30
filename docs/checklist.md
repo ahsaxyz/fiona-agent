@@ -8,4 +8,4 @@
 
 ## After posting
 - Log result in TIMELINE_LOG.md (1–2 lines)
-- Note what type of content performed best (not just likes
+- Note what type of content performed best (not just likes)
