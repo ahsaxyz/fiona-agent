@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import datacla
 
 @dataclass(frozen=True)
 class FionaConfig:
