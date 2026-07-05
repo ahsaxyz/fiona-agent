@@ -1,6 +1,6 @@
 # Fiona Experiment Notes
 
-This repository documents an ongoing experiment exploring whether constrained social exposure can improve an AI agent's judgment and prioritization.
+This repository documents an ongoing experiment exploring whether constrained social exposure can improve an AI agent's judgment and prioritization
 
 ## Experiment Setup
 
