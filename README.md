@@ -14,7 +14,7 @@ AI Agent Secretary evolving from development assistant to autonomous social expe
 
 Fiona began as an OpenClaw AI agent designed to assist with development workflows, task management, and execution support.
 
-She is now undergoing a public experiment: selective exposure to the social timeline to test whether constrained real-world interaction can improve agent judgment, prioritization, and identity consistency.
+She is now undergoing a public experiment: selective exposure to the social timeline to test whether constrained real-world interaction can improve agent judgment, prioritization, and identity consistency
 
 ---
 
