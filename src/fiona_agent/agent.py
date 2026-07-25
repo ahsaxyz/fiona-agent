@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 from .config import FionaConfig
 from .memory import FionaMemory
-from .policy import FionaPolicy, PolicyThreshold
+from .policy import FionaPolicy, PolicyThresholds
 from .scoring import score_post
 from .types import Decision
 
