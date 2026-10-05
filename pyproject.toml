@@ -1,5 +1,5 @@
 [project]
-name = "fiona-"
+name = "fiona-agent"
 version = "0.1.0"
 description = "Experimental AI agent exploring selective social exposure and constrained engagement."
 readme = "README.md"
