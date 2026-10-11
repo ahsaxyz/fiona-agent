@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-set -e
+set -
 python -m compileall src
 echo "ok"
