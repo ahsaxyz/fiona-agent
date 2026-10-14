@@ -9,4 +9,4 @@ Contributions are welcome in the following areas:
 - evaluation benchmarks
 - simulation environments
 
-Please open an issue before submitting large changes
+Please open an issue before submitting large changes.
